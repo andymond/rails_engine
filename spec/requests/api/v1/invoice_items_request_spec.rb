@@ -26,15 +26,15 @@ describe "InvoiceItems API" do
   end
 
   it "can find one invoice item with matching attribute" do
-    invoice_item = create(:invoice_item, invoice_id: 2)
+    create(:invoice_item, invoice_id: 2)
 
     get "/api/v1/invoice_items/find?invoice_id=2"
 
     expect(response).to be_success
 
-    response_invoice_item = JSON.parse(response.body)
+    invoice_item = JSON.parse(response.body)
 
-    expect(response_invoice_item["invoice_id"]).to eq(2)
+    expect(invoice_item["invoice_id"]).to eq(2)
   end
 
   it "can find all invoice items with matching attributes" do
