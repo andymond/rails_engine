@@ -24,4 +24,16 @@ describe "InvoiceItems API" do
 
     expect(response_invoice_item["id"]).to eq(invoice_item.id)
   end
+
+  it "can find all invoice items with matching attributes" do
+    create_list(:invoice_item, 3, item_id: 1)
+
+    get "/api/v1/invoice_items/find_all?item_id=1"
+
+    expect(response).to be_success
+
+    invoice_items = JSON.parse(response.body)
+
+    invoice_items.each {|i_i| expect(i_i["item_id"]).to eq(1)}
+  end
 end
