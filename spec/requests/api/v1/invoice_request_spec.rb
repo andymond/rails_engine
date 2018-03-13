@@ -24,4 +24,16 @@ describe "Invoice API" do
 
     expect(response_invoice["id"]).to eq(invoice.id)
   end
+
+  it "can find one invoice with matching attribute" do
+     create(:invoice, status: "success")
+
+     get "/api/v1/invoices/find?status=success"
+
+     expect(response).to be_success
+
+     invoice = JSON.parse(response.body)
+
+     expect(invoice["status"]).to eq("success")
+  end
 end
