@@ -60,7 +60,6 @@ describe "transaction search controller" do
                            credit_card_expiration_date: 240,
                            result: "ok")
 
-
     get "/api/v1/transactions/find_all?invoice_id=420"
 
     transactions = JSON.parse(response.body)
@@ -96,9 +95,9 @@ describe "transaction search controller" do
     transactions = JSON.parse(response.body)
 
     expect(response).to be_success
-    # expect(transactions.count).to eq(2)
+    expect(transactions.count).to eq(2)
     transactions.each do |transaction|
-      # expect(transaction["result"]).to eq("ok")
+      expect(transaction["result"]).to eq("ok")
     end
   end
 end
