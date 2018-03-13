@@ -4,4 +4,6 @@ class Invoice < ApplicationRecord
   has_many :transactions
 
   scope :random, -> {order('random()').limit(1)}
+  has_many :transactions
+  has_many :invoice_items
 end
