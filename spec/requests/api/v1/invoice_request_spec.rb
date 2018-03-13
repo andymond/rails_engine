@@ -48,4 +48,18 @@ describe "Invoice API" do
 
      invoices.each {|i| expect(i["status"]).to eq("success")}
   end
+
+  it "shows a random invoice" do
+    create_list(:invoice, 4)
+
+    get "/api/v1/invoices/random.json"
+
+    invoice = JSON.parse(response.body)
+
+    expect(invoice["customer_id"]).to_not eq(nil)
+    expect(invoice["merchant_id"]).to_not eq(nil)
+    expect(invoice["status_id"]).to_not eq(nil)
+    expect(invoice["created_at"]).to_not eq(nil)
+    expect(invoice["updated_at"]).to_not eq(nil)
+  end
 end
