@@ -8,8 +8,10 @@ describe "customer random controller" do
     get "/api/v1/customers/random.json"
 
     customer = JSON.parse(response.body)
+
     expect(response).to be_success
     expect(customer.count).to eq(1)
     expect(possible_ids).to include(customer.first["id"])
+    expect(customer.first.keys).to include("first_name")
   end
 end

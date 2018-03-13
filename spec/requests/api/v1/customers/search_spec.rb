@@ -33,7 +33,7 @@ describe "customer search controller" do
                         first_name: "paul",
                         last_name: "allen")
 
-    get "/api/v1/customers/find_all?first_name=patrick"
+    get "/api/v1/customers/find_all?first_name=paTRick"
 
     customers = JSON.parse(response.body)
 
