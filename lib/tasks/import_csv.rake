@@ -54,5 +54,4 @@ end
 
 
 
-# rake import_csv:customer
-# rake import_csv or rake import_csv:*
+# rake import_csv:all
