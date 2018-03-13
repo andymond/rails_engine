@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :transaction do
-    invoice_id 1
-    credit_card_number ""
-    credit_card_expiration_date 1
-    result "MyString"
+    sequence(:invoice_id) { |n| n }
+    sequence(:credit_card_number) { |n| n }
+    sequence(:credit_card_expiration_date) { |n| n }
+    result "success"
   end
 end
