@@ -8,7 +8,7 @@ namespace :import_csv do
       Customer.create!(row.to_h)
     end
   end
-  
+
   task invoice_item: :environment do
     csv_text = File.read("./data/invoice_items.csv")
     csv = CSV.parse(csv_text, headers: :true, header_converters: :symbol, converters: :numeric)
@@ -16,7 +16,7 @@ namespace :import_csv do
       InvoiceItem.create!(row.to_h)
     end
   end
-  
+
   task invoice: :environment do
     csv_text = File.read("./data/invoices.csv")
     csv = CSV.parse(csv_text, headers: :true, header_converters: :symbol, converters: :numeric)
@@ -24,7 +24,7 @@ namespace :import_csv do
       Invoice.create!(row.to_h)
     end
   end
-  
+
   task merchant: :environment do
     csv_text = File.read("./data/merchants.csv")
     csv = CSV.parse(csv_text, headers: :true, header_converters: :symbol, converters: :numeric)
@@ -32,7 +32,7 @@ namespace :import_csv do
       Merchant.create!(row.to_h)
     end
   end
-  
+
   task transaction: :environment do
     csv_text = File.read("./data/transactions.csv")
     csv = CSV.parse(csv_text, headers: :true, header_converters: :symbol, converters: :numeric)
@@ -40,7 +40,7 @@ namespace :import_csv do
       Transaction.create!(row.to_h)
     end
   end
-  
+
   task item: :environment do
     csv_text = File.read("./data/items.csv")
     csv = CSV.parse(csv_text, headers: :true, header_converters: :symbol, converters: :numeric)
