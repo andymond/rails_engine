@@ -50,4 +50,20 @@ describe "Items API" do
     expect(response_items.first["name"]).to eq("gold")
     expect(response_items.last["name"]).to eq("gold")
   end
+
+  it "shows a random item" do
+    create_list(:item, 4)
+    possible_ids = [1, 2, 3, 4]
+
+    get "/api/v1/items/random.json"
+
+    invoice = JSON.parse(response.body)
+
+    expect(possible_ids).to include(invoice[0]["id"])
+    expect(invoice[0]["name"]).to_not eq(nil)
+    expect(invoice[0]["description"]).to_not eq(nil)
+    expect(invoice[0]["merchant_id"]).to_not eq(nil)
+    expect(invoice[0]["created_at"]).to_not eq(nil)
+    expect(invoice[0]["updated_at"]).to_not eq(nil)
+  end
 end
