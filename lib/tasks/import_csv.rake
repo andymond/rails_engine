@@ -24,6 +24,7 @@ namespace :import_csv do
       Invoice.create!(row.to_h)
     end
   end
+  
   task merchant: :environment do
     csv_text = File.read("./data/merchants.csv")
     csv = CSV.parse(csv_text, headers: :true, header_converters: :symbol, converters: :numeric)
