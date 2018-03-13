@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       namespace :items do
         get "/find", to: "search#show"
+        get "/find_all", to: "search#index"
       end
       resources :items, only: [:index, :show]
       resources :invoice_items, only: [:index, :show]
