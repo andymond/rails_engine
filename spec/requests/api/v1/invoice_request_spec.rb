@@ -36,4 +36,16 @@ describe "Invoice API" do
 
      expect(invoice["status"]).to eq("success")
   end
+
+  it "can find all invoice items with matching attribute" do
+     create_list(:invoice, 4, status: "success")
+
+     get "/api/v1/invoices/find_all?status=success"
+
+     expect(response).to be_success
+
+     invoices = JSON.parse(response.body)
+
+     invoices.each {|i| expect(i["status"]).to eq("success")}
+  end
 end
