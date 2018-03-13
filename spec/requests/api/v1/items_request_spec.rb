@@ -4,7 +4,7 @@ describe "Items API" do
   it "shows list of items" do
     create_list(:item, 5)
 
-    get "/api/v1/items"
+    get "/api/v1/items.json"
 
     expect(response).to be_success
 
@@ -16,7 +16,7 @@ describe "Items API" do
   it "can find a single item" do
     item = create(:item)
 
-    get "/api/v1/items/#{item.id}"
+    get "/api/v1/items/#{item.id}.json"
 
     expect(response).to be_success
 
