@@ -36,4 +36,18 @@ describe "Items API" do
 
     expect(response_item["id"]).to eq(item.id)
   end
+
+  it "can find all items with matching attributes" do
+    item = create(:item, name: "gold")
+    item_2 = create(:item, name: "gold")
+
+    get "/api/v1/items/find_all?name=#{item.name}"
+
+    expect(response).to be_success
+
+    response_items = JSON.parse(response.body)
+
+    expect(response_items.first["name"]).to eq("gold")
+    expect(response_items.last["name"]).to eq("gold")
+  end
 end
