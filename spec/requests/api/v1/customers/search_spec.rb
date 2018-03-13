@@ -43,7 +43,7 @@ describe "customer search controller" do
       expect(customer["first_name"]).to eq("patrick")
     end
 
-    get "/api/v1/customers/find_all?last_name=allen"
+    get "/api/v1/customers/find_all?last_name=aLLen"
 
     customers = JSON.parse(response.body)
 

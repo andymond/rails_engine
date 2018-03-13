@@ -30,7 +30,7 @@ describe "transaction search controller" do
     expect(response).to be_success
     expect(transaction["id"]).to eq(transaction1.id)
 
-    get "/api/v1/transactions/find?result=whatever"
+    get "/api/v1/transactions/find?result=whATever"
 
     transaction = JSON.parse(response.body)
 
@@ -90,7 +90,7 @@ describe "transaction search controller" do
       expect(transaction["credit_card_expiration_date"]).to eq(240)
     end
 
-    get "/api/v1/transactions/find_all?result=ok"
+    get "/api/v1/transactions/find_all?result=oK"
 
     transactions = JSON.parse(response.body)
 
