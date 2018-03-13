@@ -10,8 +10,10 @@ class Api::V1::Items::SearchController < ApplicationController
 
   private
 
-  def item_params
-    params.permit(:id, :name, :created_at, :updated_at)
-  end
-
+    def item_params
+      unless params[:unit_price].nil?
+        params[:unit_price] = params[:unit_price].to_i * 100
+      end
+      params.permit(:id, :name, :unit_price, :created_at, :updated_at)
+    end
 end
