@@ -16,7 +16,7 @@ describe "Invoice API" do
   it "shows a single invoice" do
     invoice = create(:invoice)
 
-    get "/api/v1/invoices"
+    get "/api/v1/invoices/#{invoice.id}.json"
 
     expect(response).to be_success
 
