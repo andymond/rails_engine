@@ -48,4 +48,21 @@ describe "InvoiceItems API" do
 
     invoice_items.each {|i_i| expect(i_i["item_id"]).to eq(1)}
   end
+
+  it "shows a random invoice_item" do
+    create_list(:invoice_item, 4)
+    possible_ids = [1, 2, 3, 4]
+
+    get "/api/v1/invoice_items/random.json"
+
+    invoice = JSON.parse(response.body)
+
+    expect(possible_ids).to include(invoice[0]["id"])
+    expect(invoice[0]["item_id"]).to_not eq(nil)
+    expect(invoice[0]["invoice_id"]).to_not eq(nil)
+    expect(invoice[0]["quantity"]).to_not eq(nil)
+    expect(invoice[0]["unit_price"]).to_not eq(nil)
+    expect(invoice[0]["created_at"]).to_not eq(nil)
+    expect(invoice[0]["updated_at"]).to_not eq(nil)
+  end
 end

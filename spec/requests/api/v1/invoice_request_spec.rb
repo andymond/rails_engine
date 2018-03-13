@@ -51,15 +51,17 @@ describe "Invoice API" do
 
   it "shows a random invoice" do
     create_list(:invoice, 4)
+    possible_ids = [1, 2, 3, 4]
 
     get "/api/v1/invoices/random.json"
 
     invoice = JSON.parse(response.body)
 
-    expect(invoice["customer_id"]).to_not eq(nil)
-    expect(invoice["merchant_id"]).to_not eq(nil)
-    expect(invoice["status_id"]).to_not eq(nil)
-    expect(invoice["created_at"]).to_not eq(nil)
-    expect(invoice["updated_at"]).to_not eq(nil)
+    expect(possible_ids).to include(invoice[0]["id"])
+    expect(invoice[0]["customer_id"]).to_not eq(nil)
+    expect(invoice[0]["merchant_id"]).to_not eq(nil)
+    expect(invoice[0]["status"]).to_not eq(nil)
+    expect(invoice[0]["created_at"]).to_not eq(nil)
+    expect(invoice[0]["updated_at"]).to_not eq(nil)
   end
 end
