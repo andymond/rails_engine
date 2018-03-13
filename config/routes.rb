@@ -22,6 +22,7 @@ Rails.application.routes.draw do
       resources :merchants, only: [:index, :show]
       resources :customers, only: [:index, :show]
       namespace :items do
+        get "/random", to: "random#show"
         get "/find", to: "search#show"
         get "/find_all", to: "search#index"
       end
