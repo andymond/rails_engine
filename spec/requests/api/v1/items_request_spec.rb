@@ -13,7 +13,7 @@ describe "Items API" do
     expect(items.count).to eq(5)
   end
 
-  it "can find a single item" do
+  it "can show a single item" do
     item = create(:item)
 
     get "/api/v1/items/#{item.id}.json"
