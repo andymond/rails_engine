@@ -14,6 +14,6 @@ class Api::V1::Items::SearchController < ApplicationController
       unless params[:unit_price].nil?
         params[:unit_price] = params[:unit_price].to_i * 100
       end
-      params.permit(:id, :name, :unit_price, :created_at, :updated_at)
+      params.permit(:id, :name, :unit_price, :merchant_id, :created_at, :updated_at)
     end
 end
