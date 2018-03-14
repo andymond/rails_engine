@@ -16,7 +16,7 @@ describe "invoice items controller" do
 
     expect(response).to be_success
     expect(results.count).to eq(2)
-    expect(results.first["name"]).to eq("item1")
-    expect(results.last["name"]).to eq("item2")
+    expect(results.first["name"]).to eq(item1.name)
+    expect(results.last["name"]).to eq(item2.name)
   end
 end
