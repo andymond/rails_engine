@@ -1,4 +1,4 @@
-class Api::V1::Merchants::RevenueController < ApplicationController
+class Api::V1::Merchants::MostRevenueController < ApplicationController
 
   def index
     render json: Merchant.revenue.limit(revenue_params[:quantity])
