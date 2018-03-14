@@ -5,4 +5,11 @@ class Invoice < ApplicationRecord
   has_many :transactions
   has_many :invoice_items
   has_many :items, through: :invoice_items
+
+  def self.revenue_by_date(date)
+    joins(:invoice_items, :transactions)
+      .merge(Transaction.unscoped.successful)
+      .where("invoices.created_at = ?", date)
+      .sum("invoice_items.unit_price * invoice_items.quantity")
+  end
 end
