@@ -10,4 +10,15 @@ class Merchant < ApplicationRecord
       .group(:id)
       .order("revenue DESC")
   end
+
+  def self.favorite_merchant(customer_id)
+    unscoped.select("merchants.*, count(transactions.*) as successful_transactions")
+    .joins(:invoices)
+    .joins(invoices: [:transactions, :customer])
+    .merge(Transaction.unscoped.successful)
+    .where("customers.id =?", customer_id)
+    .order("successful_transactions desc")
+    .group(:id)
+    .limit(1)
+  end
 end
