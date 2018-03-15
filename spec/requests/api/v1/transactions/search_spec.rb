@@ -77,7 +77,7 @@ describe "transaction search controller" do
     expect(response).to be_success
     expect(transactions.count).to eq(3)
     transactions.each do |transaction|
-      expect(transaction["credit_card_number"]).to eq(840)
+      expect(transaction["credit_card_number"]).to eq("840")
     end
 
     get "/api/v1/transactions/find_all?credit_card_expiration_date=240"
