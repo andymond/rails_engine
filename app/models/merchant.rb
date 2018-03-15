@@ -4,7 +4,7 @@ class Merchant < ApplicationRecord
   has_many :invoices
 
   def self.revenue
-    select("merchants.*, SUM(invoice_items.unit_price * invoice_items.quantity) AS revenue")
+    unscoped.select("merchants.*, SUM(invoice_items.unit_price * invoice_items.quantity) AS revenue")
       .joins(invoices: [:invoice_items, :transactions])
       .merge(Transaction.unscoped.successful)
       .group(:id)

@@ -3,4 +3,5 @@ class InvoiceSerializer < ActiveModel::Serializer
              :customer_id,
              :merchant_id,
              :status
+
 end
