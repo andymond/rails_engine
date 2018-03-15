@@ -19,7 +19,7 @@ describe "All merchants business intelligence" do
     expect(response).to be_success
 
     response_revenue = JSON.parse(response.body)
-
+    binding.pry
     expect(response_revenue.first["revenue"]).to eq(revenue_1)
     expect(response_revenue.last["revenue"]).to eq(revenue_2)
   end
