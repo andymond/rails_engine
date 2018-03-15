@@ -12,6 +12,8 @@ class Item < ApplicationRecord
       .group(:id)
       .order("revenue DESC")
       .limit(quantity)
+  end
+  
   def self.most_items(limit)
     unscoped.select("items.*, sum(invoice_items.quantity) as number_sold")
     .joins(:invoice_items, :invoices)
