@@ -12,5 +12,4 @@ class Api::V1::Merchants::MostRevenueController < ApplicationController
       end
       params.permit(:quantity)
     end
-
 end
