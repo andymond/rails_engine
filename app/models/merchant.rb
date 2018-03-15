@@ -10,5 +10,4 @@ class Merchant < ApplicationRecord
       .group(:id)
       .order("revenue DESC")
   end
-
 end
