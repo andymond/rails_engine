@@ -61,7 +61,5 @@ describe "Invoice API" do
     expect(invoice[0]["customer_id"]).to_not eq(nil)
     expect(invoice[0]["merchant_id"]).to_not eq(nil)
     expect(invoice[0]["status"]).to_not eq(nil)
-    expect(invoice[0]["created_at"]).to_not eq(nil)
-    expect(invoice[0]["updated_at"]).to_not eq(nil)
   end
 end
