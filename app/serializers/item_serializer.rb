@@ -3,9 +3,7 @@ class ItemSerializer < ActiveModel::Serializer
              :name,
              :description,
              :unit_price,
-             :merchant_id,
-             :created_at,
-             :updated_at
+             :merchant_id
 
   def unit_price
     (object.unit_price.to_f / 100).to_s

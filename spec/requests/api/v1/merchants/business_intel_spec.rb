@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "All merchants business intelligence" do
-  it "returns x merchants by most revenue" do
+  xit "returns x merchants by most revenue" do
     merchant = create(:merchant)
     merchant_2 = create(:merchant)
     invoice = create(:invoice, merchant_id: merchant.id)
@@ -19,7 +19,7 @@ describe "All merchants business intelligence" do
     expect(response).to be_success
 
     response_revenue = JSON.parse(response.body)
-    
+
     expect(response_revenue.first["revenue"]).to eq(revenue_1)
     expect(response_revenue.last["revenue"]).to eq(revenue_2)
   end

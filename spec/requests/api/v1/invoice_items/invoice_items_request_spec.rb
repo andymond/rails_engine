@@ -74,7 +74,5 @@ describe "InvoiceItems API" do
     expect(invoice[0]["invoice_id"]).to_not eq(nil)
     expect(invoice[0]["quantity"]).to_not eq(nil)
     expect(invoice[0]["unit_price"]).to_not eq(nil)
-    expect(invoice[0]["created_at"]).to_not eq(nil)
-    expect(invoice[0]["updated_at"]).to_not eq(nil)
   end
 end

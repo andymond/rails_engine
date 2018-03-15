@@ -80,16 +80,6 @@ describe "transaction search controller" do
       expect(transaction["credit_card_number"]).to eq("840")
     end
 
-    get "/api/v1/transactions/find_all?credit_card_expiration_date=240"
-
-    transactions = JSON.parse(response.body)
-
-    expect(response).to be_success
-    expect(transactions.count).to eq(4)
-    transactions.each do |transaction|
-      expect(transaction["credit_card_expiration_date"]).to eq(240)
-    end
-
     get "/api/v1/transactions/find_all?result=oK"
 
     transactions = JSON.parse(response.body)

@@ -39,7 +39,7 @@ describe "Items API" do
 
   it "can find item by unit_price" do
     item = create(:item, unit_price: 1000)
-    
+
     get "/api/v1/items/find?unit_price=10.00"
 
     expect(response).to be_success
@@ -75,7 +75,5 @@ describe "Items API" do
     expect(invoice[0]["name"]).to_not eq(nil)
     expect(invoice[0]["description"]).to_not eq(nil)
     expect(invoice[0]["merchant_id"]).to_not eq(nil)
-    expect(invoice[0]["created_at"]).to_not eq(nil)
-    expect(invoice[0]["updated_at"]).to_not eq(nil)
   end
 end
