@@ -18,6 +18,6 @@ describe "Merchant's favorite customer" do
 
     response_customer = JSON.parse(response.body)
 
-    expect(response_customer[0]["id"]).to eq(customer_1.id)
+    expect(response_customer["id"]).to eq(customer_1.id)
   end
 end
