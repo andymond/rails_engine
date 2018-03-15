@@ -15,7 +15,9 @@ describe "merchant revenue controller" do
 
     results = JSON.parse(response.body)
 
+    merchant_revenue = (Merchant.revenue.find(merchant1.id).revenue) / 100.00
+
     expect(response).to be_success
-    expect(results).to eq(Merchant.revenue.find(merchant1.id).revenue)
+    expect(results).to eq({ "revenue" => "#{merchant_revenue}" })
   end
 end
