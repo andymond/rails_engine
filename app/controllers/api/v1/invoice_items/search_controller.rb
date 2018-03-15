@@ -12,7 +12,7 @@ class Api::V1::InvoiceItems::SearchController < ApplicationController
 
   def invoice_item_params
     unless params[:unit_price].nil?
-      params[:unit_price] = params[:unit_price].to_i * 100
+      params[:unit_price] = params[:unit_price].to_f * 100
     end
     params.permit(:id, :item_id, :invoice_id, :quantity, :unit_price, :created_at, :updated_at)
   end
