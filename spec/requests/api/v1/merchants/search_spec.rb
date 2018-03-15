@@ -41,7 +41,7 @@ describe "merchants search controller" do
   end
 
   it "searches by date" do
-    merchant1 = create(:merchant, name: "merchant1")
+    merchant1 = create(:merchant, name: "merchant1", created_at: "2012-03-27")
     create(:merchant, name: "merchant2")
     create(:merchant, name: "merchant3")
 
