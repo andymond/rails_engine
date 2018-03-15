@@ -5,6 +5,13 @@ class Item < ApplicationRecord
   has_many :invoice_items
   has_many :invoices, through: :invoice_items
 
+  def self.most_revenue(quantity)
+    unscoped.select("items.*, SUM(invoice_items.unit_price * invoice_items.quantity) AS revenue")
+      .joins(:invoice_items, invoices: [:transactions])
+      .merge(Transaction.unscoped.successful)
+      .group(:id)
+      .order("revenue DESC")
+      .limit(quantity)
   def self.most_items(limit)
     unscoped.select("items.*, sum(invoice_items.quantity) as number_sold")
     .joins(:invoice_items, :invoices)
