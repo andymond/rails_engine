@@ -2,6 +2,7 @@ class Merchant < ApplicationRecord
   default_scope {order(:id)}
   has_many :items
   has_many :invoices
+  has_many :customers, through: :invoices
 
   def self.revenue
     unscoped.select("merchants.*, SUM(invoice_items.unit_price * invoice_items.quantity) AS revenue")
