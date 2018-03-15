@@ -7,8 +7,8 @@ class Api::V1::Merchants::RevenueController < ApplicationController
 
   private
 
-  def revenue_params
-    params.permit(:date)
-  end
+    def revenue_params
+      params.permit(:date)
+    end
 
 end

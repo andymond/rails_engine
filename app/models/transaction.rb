@@ -4,6 +4,4 @@ class Transaction < ApplicationRecord
   belongs_to :customer, optional: true
 
   scope :successful, -> {where(result: "success")}
-
-
 end

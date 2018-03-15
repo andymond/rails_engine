@@ -14,4 +14,20 @@ class Invoice < ApplicationRecord
       .sum("invoice_items.unit_price * invoice_items.quantity")
   end
 
+  def self.item_best_day(item_id)
+    unscoped.select("invoices.*, sum(invoice_items.quantity
+                    * invoice_items.unit_price) as revenue")
+      .joins(:transactions, :invoice_items)
+      .merge(Transaction.unscoped.successful)
+      .where("invoice_items.item_id = ?", item_id)
+      .order("revenue desc")
+      .group(:id)
+      .limit(1)
+  end
+
+  def self.dates(item_id)
+    self.item_best_day(item_id).each do |invoice|
+      return invoice.created_at
+    end
+  end
 end
