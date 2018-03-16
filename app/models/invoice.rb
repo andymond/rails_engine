@@ -14,6 +14,14 @@ class Invoice < ApplicationRecord
       .sum("invoice_items.unit_price * invoice_items.quantity")
   end
 
+  def self.single_merchant_revenue_by_date(date, merchant_id)
+    joins(:merchant, :invoice_items, :transactions)
+      .merge(Transaction.unscoped.successful)
+      .where("merchants.id = ?", merchant_id)
+      .where("DATE_TRUNC('day', invoices.created_at) = ?", date.slice(0..9))
+      .sum("invoice_items.unit_price * invoice_items.quantity")
+  end
+
   def self.item_best_day(item_id)
     unscoped.select("invoices.*, sum(invoice_items.quantity
                     * invoice_items.unit_price) as revenue")

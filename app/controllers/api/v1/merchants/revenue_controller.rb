@@ -6,7 +6,11 @@ class Api::V1::Merchants::RevenueController < ApplicationController
   end
 
   def show
-    render json: Merchant.revenue.find(revenue_params[:id]).revenue, serializer: SingleMerchantRevenueSerializer
+    if !revenue_params[:date].nil?
+      render json: Invoice.single_merchant_revenue_by_date(revenue_params[:date], revenue_params[:id]), serializer: SingleMerchantRevenueDateSerializer
+    else
+      render json: Merchant.revenue.find(revenue_params[:id]).revenue, serializer: SingleMerchantRevenueSerializer
+    end
   end
 
   private
