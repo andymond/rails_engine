@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/models/customer.rb": [
-        1,
-        42,
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/models/customer.rb": [
         1,
         1,
         1,
         1,
+        1,
         null,
+        1,
         1,
         null,
         null,
@@ -20,84 +20,92 @@
         null,
         null,
         1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/models/application_record.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/models/application_record.rb": [
+        1,
+        1,
+        462,
+        4,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/models/invoice_item.rb": [
+        1,
         1,
         1,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/models/invoice_item.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/models/invoice.rb": [
         1,
-        92,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/models/item.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
         2,
-        1,
-        1,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/models/invoice.rb": [
-        1,
-        108,
-        2,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/models/item.rb": [
-        1,
-        58,
-        2,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
         null,
         null,
         null,
@@ -108,9 +116,8 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/models/merchant.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/models/merchant.rb": [
         1,
-        67,
         1,
         1,
         1,
@@ -146,16 +153,14 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/models/transaction.rb": [
-        1,
-        100,
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/models/transaction.rb": [
         1,
         1,
-        null,
+        1,
         15,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/customers/invoices_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/customers/invoices_controller.rb": [
         1,
         null,
         1,
@@ -165,58 +170,44 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/application_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/invoice_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/invoice_serializer.rb": [
         1,
         1,
         null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/customers/transactions_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/transaction_serializer.rb": [
-        1,
-        1,
         null,
         null,
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/customers/favorite_merchant_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/customers/transactions_controller.rb": [
         1,
         null,
         1,
         1,
-        null,
-        null,
         1,
         null,
-        1,
-        1,
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/merchant_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/transaction_serializer.rb": [
         1,
         1,
         null,
+        null,
+        null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/customers/random_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/customers/favorite_merchant_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
         1,
         null,
         1,
@@ -224,26 +215,40 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/customer_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/merchant_serializer.rb": [
         1,
         1,
-        null,
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/customers_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/customers/random_controller.rb": [
         1,
-        null,
-        1,
-        1,
-        null,
         null,
         1,
         1,
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/customers/search_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/customer_serializer.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/customers_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/customers/search_controller.rb": [
         1,
         null,
         1,
@@ -261,7 +266,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoice_items/invoices_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoice_items/invoices_controller.rb": [
         1,
         null,
         1,
@@ -270,7 +275,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoice_items/items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoice_items/items_controller.rb": [
         1,
         null,
         1,
@@ -279,7 +284,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/item_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/item_serializer.rb": [
         1,
         1,
         null,
@@ -292,7 +297,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoice_items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoice_items_controller.rb": [
         1,
         1,
         1,
@@ -303,7 +308,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/invoice_item_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/invoice_item_serializer.rb": [
         1,
         1,
         null,
@@ -316,7 +321,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoice_items/search_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoice_items/search_controller.rb": [
         1,
         null,
         1,
@@ -343,7 +348,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
         1,
         null,
         1,
@@ -352,7 +357,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices/customers_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices/customers_controller.rb": [
         1,
         null,
         1,
@@ -361,7 +366,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices/invoice_items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices/invoice_items_controller.rb": [
         1,
         null,
         1,
@@ -370,7 +375,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices/items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices/items_controller.rb": [
         1,
         null,
         1,
@@ -379,7 +384,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices/merchants_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices/merchants_controller.rb": [
         1,
         null,
         1,
@@ -388,7 +393,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices_controller.rb": [
         1,
         null,
         1,
@@ -400,7 +405,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices/search_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices/search_controller.rb": [
         1,
         null,
         1,
@@ -424,7 +429,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices/random_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices/random_controller.rb": [
         1,
         null,
         1,
@@ -432,39 +437,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/invoices/transactions_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items/best_day_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/itembestday_serializer.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/invoices/transactions_controller.rb": [
         1,
         null,
         1,
@@ -473,7 +446,30 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items/merchants_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items/best_day_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/itembestday_serializer.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
         1,
         null,
         1,
@@ -482,7 +478,16 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items/merchants_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items_controller.rb": [
         1,
         null,
         1,
@@ -495,7 +500,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items/search_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items/search_controller.rb": [
         1,
         null,
         1,
@@ -516,7 +521,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items/random_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items/random_controller.rb": [
         1,
         null,
         1,
@@ -525,7 +530,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items/most_items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items/most_items_controller.rb": [
         1,
         null,
         1,
@@ -539,7 +544,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/items/most_revenue_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/items/most_revenue_controller.rb": [
         1,
         null,
         1,
@@ -553,7 +558,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/most_revenue_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/most_revenue_controller.rb": [
         1,
         null,
         1,
@@ -570,7 +575,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/revenue_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/revenue_controller.rb": [
         1,
         1,
         null,
@@ -594,7 +599,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/merchant_revenue_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/merchant_revenue_serializer.rb": [
         1,
         1,
         null,
@@ -603,7 +608,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/pending_invoices_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/pending_invoices_controller.rb": [
         1,
         null,
         1,
@@ -612,7 +617,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
         1,
         null,
         1,
@@ -621,17 +626,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/invoices_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/items_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/invoices_controller.rb": [
         1,
         null,
         1,
@@ -641,7 +636,17 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/random_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/items_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/random_controller.rb": [
         1,
         null,
         1,
@@ -649,7 +654,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants_controller.rb": [
         1,
         null,
         1,
@@ -661,7 +666,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/single_merchant_revenue_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/single_merchant_revenue_serializer.rb": [
         1,
         1,
         null,
@@ -670,7 +675,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/search_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/search_controller.rb": [
         1,
         null,
         1,
@@ -688,7 +693,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/serializers/single_merchant_revenue_date_serializer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/serializers/single_merchant_revenue_date_serializer.rb": [
         1,
         1,
         null,
@@ -697,7 +702,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/merchants/top_merchants_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/merchants/top_merchants_controller.rb": [
         1,
         null,
         1,
@@ -711,7 +716,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/transactions/random_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/transactions/random_controller.rb": [
         1,
         null,
         1,
@@ -719,7 +724,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/transactions_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/transactions_controller.rb": [
         1,
         null,
         1,
@@ -732,7 +737,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/transactions/search_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/transactions/search_controller.rb": [
         1,
         null,
         1,
@@ -756,7 +761,7 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/controllers/api/v1/transactions/invoices_controller.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/controllers/api/v1/transactions/invoices_controller.rb": [
         1,
         null,
         1,
@@ -766,29 +771,29 @@
         null,
         null
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/channels/application_cable/channel.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/channels/application_cable/connection.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/jobs/application_job.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/Users/cameron/turing/3module/rails engine/rails_engine/app/mailers/application_mailer.rb": [
+      "/Users/AndrewDymond/turing/3module/projects/RE/rails_engine/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1521219162
+    "timestamp": 1521223874
   }
 }
