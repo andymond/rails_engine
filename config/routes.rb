@@ -21,6 +21,7 @@ Rails.application.routes.draw do
         get "/most_revenue", to: "most_revenue#index"
         get "/revenue", to: "revenue#index"
         get "//most_items", to: "top_merchants#index"
+        get "/:id/customers_with_pending_invoices", to: "pending_invoices#index"
       end
       namespace :transactions do
         get "/find", to: "search#show"

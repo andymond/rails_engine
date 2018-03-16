@@ -14,4 +14,8 @@ class Customer < ApplicationRecord
       .order("transaction_count DESC")
       .limit(1)
   end
+
+  def self.pending_invoices(merchant_id)
+    unscoped.find_by_sql(["SELECT customers.* FROM customers INNER JOIN invoices ON customers.id = invoices.customer_id INNER JOIN transactions ON invoices.id = transactions.invoice_id WHERE invoices.merchant_id = ? AND transactions.result = 'failed' EXCEPT SELECT customers.* FROM customers INNER JOIN invoices ON customers.id = invoices.customer_id INNER JOIN transactions ON invoices.id = transactions.invoice_id WHERE invoices.merchant_id = ? AND transactions.result = 'success'", merchant_id, merchant_id])
+  end
 end
