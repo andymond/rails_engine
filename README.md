@@ -1,24 +1,29 @@
-# README
+# Rails Engine
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Summary
+Rails Engine is an api for managing, searching and analyzing business statistics.
 
-Things you may want to cover:
+## Setup (Mac OS)
+Run the following commands in your terminal to get up and running:
+* Clone the repo onto your machine: 
+```$ git clone https://github.com/andymond/rails_engine.git ```
+* CD into the folder
+```$ cd rails_engine ```
+* Install dependencies
+``` $ bundle install ```
+* Create your postgres database & tables:
+```$ rails db:setup ```
+* Seed your database with the included data files: 
+```$ rake import_csv:all ```
+* To run the included test suite run:
+```$ rspec ```
 
-* Ruby version
+## Stack
+* Rails 5.1.5
+* Ruby 2.4.1
+* PostgreSQL 10.1
+* RSpec 3.7
 
-* System dependencies
+## DB Schema
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![alt text](docs/re_db_schema.png)
