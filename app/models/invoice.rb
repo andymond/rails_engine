@@ -1,6 +1,4 @@
 class Invoice < ApplicationRecord
-  default_scope {order(:id)}
-  scope :random, -> {order('random()').limit(1)}
   belongs_to :customer, optional: true
   belongs_to :merchant, optional: true
   has_many :transactions
@@ -23,12 +21,13 @@ class Invoice < ApplicationRecord
   end
 
   def self.item_best_day(item_id)
-    unscoped.select("invoices.*, sum(invoice_items.quantity
-                    * invoice_items.unit_price) as revenue")
+    sql = "invoices.*, sum(invoice_items.quantity
+           * invoice_items.unit_price) as revenue"
+    unscoped.select(sql)
       .joins(:transactions, :invoice_items)
       .merge(Transaction.unscoped.successful)
       .where("invoice_items.item_id = ?", item_id)
-      .order("revenue desc")
+      .order("revenue DESC")
       .group(:id)
       .limit(1)
   end
